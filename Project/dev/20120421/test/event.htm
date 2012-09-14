@@ -1,0 +1,184 @@
+<html>
+ <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# volteer: http://ogp.me/ns/fb/volteer#">
+  <meta property="fb:app_id"    content="347912545229392" /> 
+  <meta property="og:type"      content="volteer:event" /> 
+  <meta property="og:url"       content="http://studentweb.comminfo.rutgers.edu/class-2012-1-16-198-675-01/nirg/dev/20120421/test/event.php" /> 
+  <meta property="og:title"     content="Adult education" /> 
+  <meta property="og:image"     content="http://studentweb.comminfo.rutgers.edu/class-2012-1-16-198-675-01/nirg/dev/20120421/images/older.jpg" /> 
+  <title>Adult education</title>
+
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .tinyimggrid {
+          float: left; margin-right: 2px; margin-bottom: 2px;
+      }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <script>
+	  window.fbAsyncInit = function() {
+		FB.init({
+		  appId      : '347912545229392',
+		  status     : true,
+		  cookie     : true,
+		  xfbml      : true,
+		  oauth      : true,
+		});
+
+		FB.Event.subscribe('auth.login', function(response) {
+		  window.location.reload();
+		});
+	  };
+
+	  (function(d){
+		 var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+		 js = d.createElement('script'); js.id = id; js.async = true;
+		 js.src = "//connect.facebook.net/en_US/all.js";
+		 d.getElementsByTagName('head')[0].appendChild(js);
+	   }(document));
+	   
+	   (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=347912545229392";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));	   
+  </script>
+
+<body>
+	<div id="fb-root"></div>
+	    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.php">Volteer</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.php">Home</a></li>
+              <li><a href="about.php">About</a></li>
+              <li><a href="join.php"> Join an event</a></li>
+              <li><a href="event.php">Create Event</a></li>
+
+            </ul>
+			<ul class="nav pull-right">		  
+			  <li class="dropdown pull-right" id="menu1">
+				  <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+					Nir Grinberg					<b class="caret"></b>
+				  </a>
+				  <ul class="dropdown-menu">
+				    <li><a href="profile.php">Profile</a></li>
+					<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fstudentweb.comminfo.rutgers.edu%2Fclass-2012-1-16-198-675-01%2Fnirg%2Fdev%2F20120421%2Flogout.php&access_token=AAAE8bLOr2lABAKRqj8ORRP3vJaHA8xxPCeXywHjSCWL0DUNg5WKRA8IVCfR04QrDZCq0ty20zxvOFIZCdVFYJy7vY5ZC6pXPeowKZCA5l7MgYHO1XZBdc">Log Out</a></li>
+				  </ul>
+			  </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>    
+	<div class="container">
+		
+		<div class="row">
+            <!-- sidebar -->
+			<div class="span3">
+                <div style="border-right-style: solid; border-right-width: thin; border-right-color: #F2F2F2; min-height: 55em; padding-right: 40px">
+				    <div class="profile_photo box">
+					  <img alt="Event_ALT_TEXT" data-size="large"  src="images/older.jpg" width="224" />
+				    </div>
+                    
+                    <hr />
+                    <p class="clearfix"> </p>
+
+					<p>
+						Organizer 
+						<div class="tinyimggrid">
+                            <a href="person.php?id=100003508208556"><img src="https://graph.facebook.com/100003508208556/picture?type=square" alt=""></a>
+                        </div>
+					</p>
+					<p class="clearfix"> </p>
+					
+                    <p>
+                        Participants (0) <!-- to get pics ,looping over each row displaying the pic. -->
+                        							<p>Be the first to <a href="join_store.php?id=64&uid=100003508208556">join!</a></p>
+						                    </p>
+                </div>
+			</div>
+            <!-- main content -->
+			<div class="span9">
+                <p>
+                    <div class="pull-right">
+														<a class="btn btn-success"><i class="icon-ok icon-white"></i> Yep , I'm Going!</a>
+							                    </div>
+                    <h1>Adult education</h1>
+                </p>
+                <p class="well">
+                    <b>When: </b>2012-05-12 at <b> TIME:</b>10:00:00 <b>for </b>2 hrs<br />
+                    <b>Where: </b>Union Square, New York, NY (<a href="http://maps.google.com/maps?f=q&q=Union Square, New York, NY" >map</a>)<br />
+                    <b>Description: </b>Break the cycle of poverty                     
+                </p>
+                <p>
+                    <h3>Recent Activity</h3>
+                    <div class="row-fluid">
+			            <div class="span1"><center><a href="#" class="thumbnail"><img src="http://placehold.it/44x44" alt=""></a></center></div>
+                        <div class="span11">
+                            <div class="well">
+                                Highfived Kasthuri on joining this event.
+                            </div>
+                        </div>
+                    </div><br />
+                    <div class="row-fluid">
+			            <div class="span1"><center><a href="#" class="thumbnail"><img src="http://placehold.it/44x44" alt=""></a></center></div>
+                        <div class="span11">
+                            <div class="well">
+                                John Smith joined this event.
+                            </div>
+                        </div>
+                    </div><br />
+                </p>
+				<div class="fb-like" data-href="http://studentweb.comminfo.rutgers.edu/class-2012-1-16-198-675-01/nirg/dev/20120421/event.php?id=64" data-send="true" data-width="450" data-show-faces="false" data-font="arial"></div>
+				<div class="fb-comments" data-href="http://studentweb.comminfo.rutgers.edu/class-2012-1-16-198-675-01/nirg/dev/20120421/event.php?id=64" data-num-posts="5"></div>
+			</div>
+		</div>
+	
+	</div> <!-- container -->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+/* adding my own style elements */
+
+@import url(assets/css/bootstrap.css);
+@import url(assets/css/bootstrap-responsive.css);
+.span3 {
+    padding-left: 40px;
+}
+.span9 {
+    padding-left: 40px;
+    padding-bottom: 0;
+}
+.span6 {
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-bottom: 200px;
+}

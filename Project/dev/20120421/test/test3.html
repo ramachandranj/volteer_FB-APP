@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"
+      xmlns:fb="https://www.facebook.com/2008/fbml"> 
+<head prefix="og: http://ogp.me/ns# volteer: 
+                  http://ogp.me/ns/apps/volteer#">
+  <title>OG Tutorial App</title>
+  <meta property="fb:app_id" content="347912545229392" /> 
+  <meta property="og:type" content="volteer:event" /> 
+  <meta property="og:title" content="Stuffed Cookies" /> 
+  <meta property="og:image" content="http://fbwerks.com:8000/zhen/cookie.jpg" /> 
+  <meta property="og:description" content="The Turducken of Cookies" /> 
+  <meta property="og:url" content="http://studentweb.comminfo.rutgers.edu/class-2012-1-16-198-675-01/nirg/dev/20120421/test3.html">
+
+  <script type="text/javascript">
+  function postCook()
+  {
+      FB.api(
+        '/me/volteer:create?event=http://studentweb.comminfo.rutgers.edu/class-2012-1-16-198-675-01/nirg/dev/20120421/test3.html',
+        'post',
+        function(response) {
+           if (!response || response.error) {
+              alert('Error occured');
+           } else {
+              alert('Cook was successful! Action ID: ' + response.id);
+           }
+        });
+  }
+  </script>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '347912545229392', // App ID
+        status     : true, // check login status
+        cookie     : true, // enable cookies to allow the server to access the session
+        xfbml      : true  // parse XFBML
+      });
+    };
+
+    // Load the SDK Asynchronously
+    (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = "//connect.facebook.net/en_US/all.js";
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+  </script>
+
+  <fb:add-to-timeline></fb:add-to-timeline>
+
+  <h3>Stuffed Cookies</h3>
+  <p>
+    <img title="Stuffed Cookies" 
+         src="http://fbwerks.com:8000/zhen/cookie.jpg" 
+         width="550"/>
+  </p>
+
+  <br>
+  <form>
+    <input type="button" value="Cook" onclick="postCook()" />
+  </form>
+</body>
+</html>
